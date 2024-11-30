@@ -6,7 +6,7 @@ import Name from "./components/Aboutme";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between relative">
-      <Image src={bg} fill className="w-full h-full object-cover -z-10 object-center opacity-25" />
+      <Image src={'/background/Bg.jpg'} fill className="w-full h-full object-cover -z-10 object-center opacity-25" />
       <Name/>
       <div className="w-full h-screen">
         <RenderModel>

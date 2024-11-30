@@ -20,7 +20,6 @@ const Sound = () => {
 
       <audio ref={audioRef} loop>
         <source src={"/audio/MainAudio.mp3"} type="audio/mpeg" />
-        your browser does not support the audio element.
       </audio>
       <motion.button
         onClick={toggle}

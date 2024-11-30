@@ -1,0 +1,237 @@
+[debug] [2024-11-27T13:09:44.560Z] ----------------------------------------------------------------------
+[debug] [2024-11-27T13:09:44.565Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-11-27T13:09:44.565Z] CLI Version:   13.27.0
+[debug] [2024-11-27T13:09:44.565Z] Platform:      win32
+[debug] [2024-11-27T13:09:44.566Z] Node Version:  v22.2.0
+[debug] [2024-11-27T13:09:44.566Z] Time:          Wed Nov 27 2024 05:09:44 GMT-0800 (Pacific Standard Time)
+[debug] [2024-11-27T13:09:44.566Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-27T13:09:44.732Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-27T13:09:44.733Z] > authorizing via signed-in user (stang26344@gmail.com)
+[debug] [2024-11-27T13:09:44.733Z] [iam] checking project cpb24weba037 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-27T13:09:44.742Z] Checked if tokens are valid: false, expires at: 1732675440217
+[debug] [2024-11-27T13:09:44.742Z] Checked if tokens are valid: false, expires at: 1732675440217
+[debug] [2024-11-27T13:09:44.743Z] > refreshing access token with scopes: []
+[debug] [2024-11-27T13:09:44.747Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-27T13:09:44.747Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-27T13:09:45.010Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-11-27T13:09:45.011Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-27T13:09:45.022Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions [none]
+[debug] [2024-11-27T13:09:45.022Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions x-goog-quota-user=projects/cpb24weba037
+[debug] [2024-11-27T13:09:45.023Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-27T13:09:46.270Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions 200
+[debug] [2024-11-27T13:09:46.270Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-27T13:09:46.270Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:09:46.271Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:09:46.271Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 [none]
+[debug] [2024-11-27T13:09:46.659Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 200
+[debug] [2024-11-27T13:09:46.659Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 {"projectId":"cpb24weba037","projectNumber":"976432731746","displayName":"cpb24weba037","name":"projects/cpb24weba037","resources":{"hostingSite":"cpb24weba037"},"state":"ACTIVE","etag":"1_ecaab1c2-9a80-4835-bff8-e3da7d088f06"}
+[debug] [2024-11-27T13:09:50.726Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:09:50.726Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:09:50.727Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites pageToken=&pageSize=10
+[debug] [2024-11-27T13:09:51.592Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites 200
+[debug] [2024-11-27T13:09:51.593Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites {"sites":[{"name":"projects/cpb24weba037/sites/cpb24weba037","defaultUrl":"https://cpb24weba037.web.app","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-27T13:09:51.593Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:09:51.593Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:09:51.593Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config [none]
+[debug] [2024-11-27T13:09:52.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config 200
+[debug] [2024-11-27T13:09:52.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config {"projectId":"cpb24weba037","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","storageBucket":"cpb24weba037.firebasestorage.app","apiKey":"AIzaSyCMuTTuEVKpyRUZMjyrfufHHMCKWpS2pDk","authDomain":"cpb24weba037.firebaseapp.com","messagingSenderId":"976432731746","measurementId":"G-J4M7BEN7Y3"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-11-27T13:10:05.106Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:10:05.106Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:10:05.107Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 [none]
+[debug] [2024-11-27T13:10:05.839Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 200
+[debug] [2024-11-27T13:10:05.840Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 {"name":"projects/cpb24weba037/sites/cpb24weba037","defaultUrl":"https://cpb24weba037.web.app","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.10
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'C:\Users\Admin\Desktop\New folder (4)\PlatformHosting\PlatformHosting\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\Admin\\Desktop\\New folder (4)\\PlatformHosting\\PlatformHosting\\.next\\trace'
+}
+
+[debug] [2024-11-27T13:10:40.854Z] Error: ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (4)\PlatformHosting\PlatformHosting\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-27T13:14:57.141Z] ----------------------------------------------------------------------
+[debug] [2024-11-27T13:14:57.146Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-11-27T13:14:57.146Z] CLI Version:   13.27.0
+[debug] [2024-11-27T13:14:57.146Z] Platform:      win32
+[debug] [2024-11-27T13:14:57.147Z] Node Version:  v22.2.0
+[debug] [2024-11-27T13:14:57.147Z] Time:          Wed Nov 27 2024 05:14:57 GMT-0800 (Pacific Standard Time)
+[debug] [2024-11-27T13:14:57.147Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-27T13:14:57.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-27T13:14:57.259Z] > authorizing via signed-in user (stang26344@gmail.com)
+[debug] [2024-11-27T13:14:57.260Z] [iam] checking project cpb24weba037 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-27T13:14:57.262Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:14:57.262Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:14:57.264Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions [none]
+[debug] [2024-11-27T13:14:57.264Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions x-goog-quota-user=projects/cpb24weba037
+[debug] [2024-11-27T13:14:57.264Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-27T13:14:58.506Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions 200
+[debug] [2024-11-27T13:14:58.506Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-27T13:14:58.507Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:14:58.507Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:14:58.507Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 [none]
+[debug] [2024-11-27T13:14:58.952Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 200
+[debug] [2024-11-27T13:14:58.952Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 {"projectId":"cpb24weba037","projectNumber":"976432731746","displayName":"cpb24weba037","name":"projects/cpb24weba037","resources":{"hostingSite":"cpb24weba037"},"state":"ACTIVE","etag":"1_ecaab1c2-9a80-4835-bff8-e3da7d088f06"}
+[debug] [2024-11-27T13:15:03.532Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:15:03.533Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:15:03.533Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites pageToken=&pageSize=10
+[debug] [2024-11-27T13:15:04.361Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites 200
+[debug] [2024-11-27T13:15:04.361Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites {"sites":[{"name":"projects/cpb24weba037/sites/cpb24weba037","defaultUrl":"https://cpb24weba037.web.app","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-27T13:15:04.361Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:15:04.362Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:15:04.362Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config [none]
+[debug] [2024-11-27T13:15:05.314Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config 200
+[debug] [2024-11-27T13:15:05.314Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config {"projectId":"cpb24weba037","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","storageBucket":"cpb24weba037.firebasestorage.app","apiKey":"AIzaSyCMuTTuEVKpyRUZMjyrfufHHMCKWpS2pDk","authDomain":"cpb24weba037.firebaseapp.com","messagingSenderId":"976432731746","measurementId":"G-J4M7BEN7Y3"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-11-27T13:15:16.901Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:15:16.902Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:15:16.902Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 [none]
+[debug] [2024-11-27T13:15:17.600Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 200
+[debug] [2024-11-27T13:15:17.600Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 {"name":"projects/cpb24weba037/sites/cpb24weba037","defaultUrl":"https://cpb24weba037.web.app","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.10
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'C:\Users\Admin\Desktop\New folder (4)\PlatformHosting\PlatformHosting\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\Admin\\Desktop\\New folder (4)\\PlatformHosting\\PlatformHosting\\.next\\trace'
+}
+
+[debug] [2024-11-27T13:15:39.977Z] Error: ENOENT: no such file or directory, open 'C:\Users\Admin\Desktop\New folder (4)\PlatformHosting\PlatformHosting\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-11-27T13:17:06.961Z] ----------------------------------------------------------------------
+[debug] [2024-11-27T13:17:06.965Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-11-27T13:17:06.965Z] CLI Version:   13.27.0
+[debug] [2024-11-27T13:17:06.966Z] Platform:      win32
+[debug] [2024-11-27T13:17:06.966Z] Node Version:  v22.2.0
+[debug] [2024-11-27T13:17:06.966Z] Time:          Wed Nov 27 2024 05:17:06 GMT-0800 (Pacific Standard Time)
+[debug] [2024-11-27T13:17:06.967Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-27T13:17:07.080Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-27T13:17:07.081Z] > authorizing via signed-in user (stang26344@gmail.com)
+[debug] [2024-11-27T13:17:07.081Z] [iam] checking project cpb24weba037 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-27T13:17:07.083Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:17:07.083Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:17:07.084Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions [none]
+[debug] [2024-11-27T13:17:07.084Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions x-goog-quota-user=projects/cpb24weba037
+[debug] [2024-11-27T13:17:07.085Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-27T13:17:08.270Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions 200
+[debug] [2024-11-27T13:17:08.270Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-27T13:17:08.271Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:17:08.271Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:17:08.271Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 [none]
+[debug] [2024-11-27T13:17:08.731Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 200
+[debug] [2024-11-27T13:17:08.731Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 {"projectId":"cpb24weba037","projectNumber":"976432731746","displayName":"cpb24weba037","name":"projects/cpb24weba037","resources":{"hostingSite":"cpb24weba037"},"state":"ACTIVE","etag":"1_ecaab1c2-9a80-4835-bff8-e3da7d088f06"}
+[debug] [2024-11-27T13:17:12.788Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:17:12.788Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:17:12.789Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites pageToken=&pageSize=10
+[debug] [2024-11-27T13:17:13.622Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites 200
+[debug] [2024-11-27T13:17:13.622Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites {"sites":[{"name":"projects/cpb24weba037/sites/cpb24weba037","defaultUrl":"https://cpb24weba037.web.app","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-27T13:17:13.622Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:17:13.623Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:17:13.623Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config [none]
+[debug] [2024-11-27T13:17:14.919Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config 200
+[debug] [2024-11-27T13:17:14.919Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config {"projectId":"cpb24weba037","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","storageBucket":"cpb24weba037.firebasestorage.app","apiKey":"AIzaSyCMuTTuEVKpyRUZMjyrfufHHMCKWpS2pDk","authDomain":"cpb24weba037.firebaseapp.com","messagingSenderId":"976432731746","measurementId":"G-J4M7BEN7Y3"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-11-27T13:17:27.761Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:17:27.762Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:17:27.762Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 [none]
+[debug] [2024-11-27T13:17:28.456Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 200
+[debug] [2024-11-27T13:17:28.456Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 {"name":"projects/cpb24weba037/sites/cpb24weba037","defaultUrl":"https://cpb24weba037.web.app","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.10
+
+[info] 
+
+[debug] [2024-11-27T13:21:28.089Z] ----------------------------------------------------------------------
+[debug] [2024-11-27T13:21:28.094Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-11-27T13:21:28.095Z] CLI Version:   13.27.0
+[debug] [2024-11-27T13:21:28.095Z] Platform:      win32
+[debug] [2024-11-27T13:21:28.095Z] Node Version:  v22.2.0
+[debug] [2024-11-27T13:21:28.096Z] Time:          Wed Nov 27 2024 05:21:28 GMT-0800 (Pacific Standard Time)
+[debug] [2024-11-27T13:21:28.096Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-27T13:21:28.222Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-27T13:21:28.222Z] > authorizing via signed-in user (stang26344@gmail.com)
+[debug] [2024-11-27T13:21:28.223Z] [iam] checking project cpb24weba037 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-27T13:21:28.227Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:21:28.227Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:21:28.229Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions [none]
+[debug] [2024-11-27T13:21:28.229Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions x-goog-quota-user=projects/cpb24weba037
+[debug] [2024-11-27T13:21:28.229Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-27T13:21:29.496Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions 200
+[debug] [2024-11-27T13:21:29.496Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cpb24weba037:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-27T13:21:29.497Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:21:29.497Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:21:29.497Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 [none]
+[debug] [2024-11-27T13:21:29.923Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 200
+[debug] [2024-11-27T13:21:29.923Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cpb24weba037 {"projectId":"cpb24weba037","projectNumber":"976432731746","displayName":"cpb24weba037","name":"projects/cpb24weba037","resources":{"hostingSite":"cpb24weba037"},"state":"ACTIVE","etag":"1_ecaab1c2-9a80-4835-bff8-e3da7d088f06"}
+[debug] [2024-11-27T13:21:34.579Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:21:34.579Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:21:34.581Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites pageToken=&pageSize=10
+[debug] [2024-11-27T13:21:35.392Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites 200
+[debug] [2024-11-27T13:21:35.392Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites {"sites":[{"name":"projects/cpb24weba037/sites/cpb24weba037","defaultUrl":"https://cpb24weba037.web.app","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-27T13:21:35.393Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:21:35.393Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:21:35.393Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config [none]
+[debug] [2024-11-27T13:21:36.634Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config 200
+[debug] [2024-11-27T13:21:36.635Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:976432731746:web:f98afe04f2ebbb3bf6a33b/config {"projectId":"cpb24weba037","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","storageBucket":"cpb24weba037.firebasestorage.app","apiKey":"AIzaSyCMuTTuEVKpyRUZMjyrfufHHMCKWpS2pDk","authDomain":"cpb24weba037.firebaseapp.com","messagingSenderId":"976432731746","measurementId":"G-J4M7BEN7Y3"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-11-27T13:21:48.322Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:21:48.322Z] Checked if tokens are valid: true, expires at: 1732716584011
+[debug] [2024-11-27T13:21:48.322Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 [none]
+[debug] [2024-11-27T13:21:49.039Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 200
+[debug] [2024-11-27T13:21:49.039Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cpb24weba037/sites/cpb24weba037 {"name":"projects/cpb24weba037/sites/cpb24weba037","defaultUrl":"https://cpb24weba037.web.app","appId":"1:976432731746:web:f98afe04f2ebbb3bf6a33b","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.10
+
+[info] 
+
